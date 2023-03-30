@@ -1,4 +1,4 @@
-class Characters{
+class CharactersModel {
   late int charId;
   late String name;
   late String statusIdDeadOrAlive;
@@ -8,7 +8,7 @@ class Characters{
   late String created;
   late List<dynamic> episodes;
 
-  Characters.fromJson(Map<String, dynamic> json){
+  CharactersModel.fromJson(Map<String, dynamic> json) {
     charId = json['id'];
     name = json['name'];
     statusIdDeadOrAlive = json['status'];

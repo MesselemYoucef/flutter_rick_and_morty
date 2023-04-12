@@ -19,10 +19,10 @@ class CharactersWebServices {
   Future<List<dynamic>> getAllCharacters() async {
     try {
       Response response = await dio.get('character');
-      print(response.data.toString());
-      return response.data;
+      print("this is the data: ${response.data.toString()}");
+      return response.data['results'];
     } catch (error) {
-      print("There was an error: {$error}");
+      print("There was an error here: {$error}");
     }
     return [];
   }

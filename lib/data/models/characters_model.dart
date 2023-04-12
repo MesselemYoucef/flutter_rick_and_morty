@@ -16,6 +16,6 @@ class CharactersModel {
     gender = json['gender'];
     image = json['image'];
     created = json['created'];
-    episodes = json['episodes'];
+    episodes = json['episode'];
   }
 }
